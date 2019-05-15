@@ -69,6 +69,61 @@
             </objects>
             <point key="canvasLocation" x="62.5" y="31.640624999999996"/>
         </scene>
+        <!--Terminal View Controller-->
+        <scene sceneID="nZA-aM-wqU">
+            <objects>
+                <viewController id="J2D-4M-nla" customClass="TerminalViewController" customModule="SOeducation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="93C-Ka-J90">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MG3-nJ-FyR">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NavegationBarTerminal" translatesAutoresizingMaskIntoConstraints="NO" id="aA7-ZS-2CB">
+                                        <rect key="frame" x="0.0" y="-8" width="1024" height="79"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4z-n2-OnI">
+                                        <rect key="frame" x="24" y="12" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="T8z-La-0p4"/>
+                                            <constraint firstAttribute="width" constant="45" id="cJT-XY-TJ2"/>
+                                        </constraints>
+                                        <state key="normal" image="ExitSoftware"/>
+                                        <connections>
+                                            <segue destination="ZgB-DH-3Nq" kind="show" id="ygn-RH-aC4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="aA7-ZS-2CB" firstAttribute="centerX" secondItem="MG3-nJ-FyR" secondAttribute="centerX" id="0aR-1h-DNV"/>
+                                    <constraint firstItem="d4z-n2-OnI" firstAttribute="top" secondItem="MG3-nJ-FyR" secondAttribute="top" constant="12" id="4jB-eA-c8m"/>
+                                    <constraint firstAttribute="trailing" secondItem="aA7-ZS-2CB" secondAttribute="trailing" id="7QH-Nw-CBB"/>
+                                    <constraint firstItem="d4z-n2-OnI" firstAttribute="leading" secondItem="MG3-nJ-FyR" secondAttribute="leading" constant="24" id="8YA-Xb-F5T"/>
+                                    <constraint firstItem="aA7-ZS-2CB" firstAttribute="leading" secondItem="MG3-nJ-FyR" secondAttribute="leading" id="JRT-Hd-2Hp"/>
+                                    <constraint firstItem="aA7-ZS-2CB" firstAttribute="top" secondItem="MG3-nJ-FyR" secondAttribute="top" constant="-8" id="sOJ-j6-yfd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MG3-nJ-FyR" firstAttribute="width" secondItem="93C-Ka-J90" secondAttribute="width" id="Jeu-hY-O7w"/>
+                            <constraint firstItem="MG3-nJ-FyR" firstAttribute="centerY" secondItem="93C-Ka-J90" secondAttribute="centerY" id="Mse-CA-5ob"/>
+                            <constraint firstItem="MG3-nJ-FyR" firstAttribute="height" secondItem="93C-Ka-J90" secondAttribute="height" id="UOV-fj-sYu"/>
+                            <constraint firstItem="MG3-nJ-FyR" firstAttribute="centerX" secondItem="93C-Ka-J90" secondAttribute="centerX" id="ZF0-0o-H7m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gbj-PZ-bnn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BSi-Ud-K4d"/>
+                    <connections>
+                        <outlet property="BackGroundTerminal" destination="MG3-nJ-FyR" id="PyI-bP-c7k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sN7-qm-1b4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="894" y="-973"/>
+        </scene>
         <!--Desktop View Controller-->
         <scene sceneID="bFt-cW-hqI">
             <objects>
@@ -79,7 +134,24 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ayG-lN-HAy">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cj6-fe-DHf">
+                                        <rect key="frame" x="98" y="98" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="4wY-3G-Qvy"/>
+                                            <constraint firstAttribute="width" constant="150" id="9UO-Ql-JDW"/>
+                                        </constraints>
+                                        <state key="normal" image="TerminalIcon"/>
+                                        <connections>
+                                            <segue destination="J2D-4M-nla" kind="show" id="4BK-2R-AHj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="cj6-fe-DHf" firstAttribute="top" secondItem="ayG-lN-HAy" secondAttribute="top" constant="98" id="G4B-Xd-j45"/>
+                                    <constraint firstItem="cj6-fe-DHf" firstAttribute="leading" secondItem="ayG-lN-HAy" secondAttribute="leading" constant="98" id="z4j-Xz-2ZQ"/>
+                                </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="ZP7-RF-iZq">
                                 <rect key="frame" x="234" y="258.5" width="556" height="251"/>
@@ -102,13 +174,19 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wQi-7q-fxS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="888" y="31"/>
+            <point key="canvasLocation" x="887.69531249999989" y="30.46875"/>
         </scene>
     </scenes>
     <resources>
+        <image name="ExitSoftware" width="55" height="55"/>
         <image name="LogoDesktop" width="556" height="251"/>
+        <image name="NavegationBarTerminal" width="1366" height="79"/>
+        <image name="TerminalIcon" width="150" height="150"/>
         <image name="devLogo" width="556" height="44"/>
         <image name="onGame" width="141" height="152"/>
         <image name="playerDesk" width="786" height="393"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ygn-RH-aC4"/>
+    </inferredMetricsTieBreakers>
 </document>

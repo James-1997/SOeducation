@@ -15,6 +15,7 @@
 		1DE2FED1228CA90200544246 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE2FECF228CA90200544246 /* LaunchScreen.storyboard */; };
 		1DE2FEDD228CA94900544246 /* resourceDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2FEDC228CA94900544246 /* resourceDesign.swift */; };
 		1DE2FEDF228CCEEF00544246 /* DesktopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2FEDE228CCEEF00544246 /* DesktopViewController.swift */; };
+		1DE2FEE1228CD69D00544246 /* TerminalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2FEE0228CD69D00544246 /* TerminalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1DE2FED2228CA90200544246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DE2FEDC228CA94900544246 /* resourceDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resourceDesign.swift; sourceTree = "<group>"; };
 		1DE2FEDE228CCEEF00544246 /* DesktopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopViewController.swift; sourceTree = "<group>"; };
+		1DE2FEE0228CD69D00544246 /* TerminalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				1DE2FEC3228CA90000544246 /* AppDelegate.swift */,
 				1DE2FEC5228CA90000544246 /* ViewController.swift */,
 				1DE2FEDE228CCEEF00544246 /* DesktopViewController.swift */,
+				1DE2FEE0228CD69D00544246 /* TerminalViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE2FEE1228CD69D00544246 /* TerminalViewController.swift in Sources */,
 				1DE2FEC6228CA90000544246 /* ViewController.swift in Sources */,
 				1DE2FEDF228CCEEF00544246 /* DesktopViewController.swift in Sources */,
 				1DE2FEDD228CA94900544246 /* resourceDesign.swift in Sources */,
