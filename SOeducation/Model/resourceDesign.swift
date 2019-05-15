@@ -15,5 +15,5 @@ let backGroundTerminalColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
 
 
 let devLogo: UIImage? = UIImage(named: "devLogo")
-let onGame: UIImage? = UIImage(named: "onGame")
+let onGame: UIImage? = UIImage(named: "OnGame")
 let playerDesk: UIImage? = UIImage(named: "playerDesk")
