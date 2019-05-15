@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DesktopViewController.swift
 //  SOeducation
 //
 //  Created by Robson James Junior on 15/05/19.
@@ -8,13 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class DesktopViewController: UIViewController {
+    
+    @IBOutlet weak var DesktopView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        DesktopView.backgroundColor = backGroundDesktopColor
+        
     }
-
-
+    
+    
 }
-

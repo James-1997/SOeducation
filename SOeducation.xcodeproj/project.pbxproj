@@ -13,6 +13,8 @@
 		1DE2FECC228CA90000544246 /* SOeducation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2FECA228CA90000544246 /* SOeducation.xcdatamodeld */; };
 		1DE2FECE228CA90200544246 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE2FECD228CA90200544246 /* Assets.xcassets */; };
 		1DE2FED1228CA90200544246 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE2FECF228CA90200544246 /* LaunchScreen.storyboard */; };
+		1DE2FEDD228CA94900544246 /* resourceDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2FEDC228CA94900544246 /* resourceDesign.swift */; };
+		1DE2FEDF228CCEEF00544246 /* DesktopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2FEDE228CCEEF00544246 /* DesktopViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1DE2FECD228CA90200544246 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DE2FED0228CA90200544246 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DE2FED2228CA90200544246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DE2FEDC228CA94900544246 /* resourceDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resourceDesign.swift; sourceTree = "<group>"; };
+		1DE2FEDE228CCEEF00544246 /* DesktopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		1DE2FEC2228CA90000544246 /* SOeducation */ = {
 			isa = PBXGroup;
 			children = (
-				1DE2FEC3228CA90000544246 /* AppDelegate.swift */,
-				1DE2FEC5228CA90000544246 /* ViewController.swift */,
-				1DE2FEC7228CA90000544246 /* Main.storyboard */,
-				1DE2FECD228CA90200544246 /* Assets.xcassets */,
-				1DE2FECF228CA90200544246 /* LaunchScreen.storyboard */,
+				1DE2FEDB228CA93700544246 /* Model */,
+				1DE2FED9228CA91C00544246 /* Controller */,
+				1DE2FEDA228CA92D00544246 /* View */,
 				1DE2FED2228CA90200544246 /* Info.plist */,
 				1DE2FECA228CA90000544246 /* SOeducation.xcdatamodeld */,
 			);
 			path = SOeducation;
+			sourceTree = "<group>";
+		};
+		1DE2FED9228CA91C00544246 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1DE2FEC3228CA90000544246 /* AppDelegate.swift */,
+				1DE2FEC5228CA90000544246 /* ViewController.swift */,
+				1DE2FEDE228CCEEF00544246 /* DesktopViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1DE2FEDA228CA92D00544246 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1DE2FEC7228CA90000544246 /* Main.storyboard */,
+				1DE2FECD228CA90200544246 /* Assets.xcassets */,
+				1DE2FECF228CA90200544246 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1DE2FEDB228CA93700544246 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1DE2FEDC228CA94900544246 /* resourceDesign.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DE2FEC6228CA90000544246 /* ViewController.swift in Sources */,
+				1DE2FEDF228CCEEF00544246 /* DesktopViewController.swift in Sources */,
+				1DE2FEDD228CA94900544246 /* resourceDesign.swift in Sources */,
 				1DE2FECC228CA90000544246 /* SOeducation.xcdatamodeld in Sources */,
 				1DE2FEC4228CA90000544246 /* AppDelegate.swift in Sources */,
 			);
@@ -296,7 +328,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Academy.SOeducation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -314,7 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Academy.SOeducation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
