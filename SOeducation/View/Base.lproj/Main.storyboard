@@ -79,13 +79,18 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ayG-lN-HAy">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="ZP7-RF-iZq">
+                                <rect key="frame" x="234" y="258.5" width="556" height="251"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ayG-lN-HAy" firstAttribute="width" secondItem="g5a-gh-T5g" secondAttribute="width" id="GEZ-Sb-nrj"/>
                             <constraint firstItem="ayG-lN-HAy" firstAttribute="centerY" secondItem="g5a-gh-T5g" secondAttribute="centerY" id="SS7-A8-VIb"/>
+                            <constraint firstItem="ZP7-RF-iZq" firstAttribute="centerY" secondItem="g5a-gh-T5g" secondAttribute="centerY" id="WFP-0h-lOz"/>
+                            <constraint firstItem="ZP7-RF-iZq" firstAttribute="centerX" secondItem="g5a-gh-T5g" secondAttribute="centerX" id="cA4-Of-MB7"/>
                             <constraint firstItem="ayG-lN-HAy" firstAttribute="centerX" secondItem="g5a-gh-T5g" secondAttribute="centerX" id="mGU-Oh-J1h"/>
                             <constraint firstItem="ayG-lN-HAy" firstAttribute="height" secondItem="g5a-gh-T5g" secondAttribute="height" id="xhi-rp-SD2"/>
                         </constraints>
@@ -101,6 +106,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="LogoDesktop" width="556" height="251"/>
         <image name="devLogo" width="556" height="44"/>
         <image name="onGame" width="141" height="152"/>
         <image name="playerDesk" width="786" height="393"/>

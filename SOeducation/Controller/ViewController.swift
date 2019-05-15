@@ -18,7 +18,10 @@ class ViewController: UIViewController {
         backGroundView.backgroundColor = backGroundMenuColor
         
     }
-
+    
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
 
 }
 
