@@ -25,6 +25,7 @@ class TerminalViewController: UIViewController {
         // Do any additional setup after loading the view.
        // TextTerminal.font = UIFont(name: "SimplePixel.tff", size: 24)
         BackGroundTerminal.backgroundColor = backGroundTerminalColor
+        TextTerminal.text = "BitDev://Digite o comando"
         
     }
     
@@ -36,7 +37,7 @@ class TerminalViewController: UIViewController {
         logCommand.append(command)
         TextTerminal.text = ""
         for cmd in logCommand {
-            TextTerminal.text! += ("\n \(cmd)")
+            TextTerminal.text! += ("\n BitDev://\(cmd)")
             print("\(cmd)")
         }
         
