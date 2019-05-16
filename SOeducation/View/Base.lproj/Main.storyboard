@@ -115,12 +115,18 @@
                                         <rect key="frame" x="8" y="65" width="1008" height="296"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FOs-PP-9Tb">
-                                                <rect key="frame" x="0.0" y="0.0" width="168" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="233.5" height="24"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual o comando? ..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1S-PA-mTm">
-                                                        <rect key="frame" x="8" y="0.0" width="152" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1S-PA-mTm">
+                                                        <rect key="frame" x="8" y="16" width="217.5" height="24"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Qual o comando? ...">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="24" name="SimplePixelFONT"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -129,7 +135,7 @@
                                                     <constraint firstAttribute="height" secondItem="w1S-PA-mTm" secondAttribute="height" id="1AT-0C-w2x"/>
                                                     <constraint firstItem="w1S-PA-mTm" firstAttribute="leading" secondItem="FOs-PP-9Tb" secondAttribute="leading" constant="8" id="AUf-mF-foc"/>
                                                     <constraint firstAttribute="trailing" secondItem="w1S-PA-mTm" secondAttribute="trailing" constant="8" id="Wrh-rq-ymM"/>
-                                                    <constraint firstItem="w1S-PA-mTm" firstAttribute="top" secondItem="FOs-PP-9Tb" secondAttribute="top" id="pwo-9m-ge7"/>
+                                                    <constraint firstItem="w1S-PA-mTm" firstAttribute="top" secondItem="FOs-PP-9Tb" secondAttribute="top" constant="16" id="pwo-9m-ge7"/>
                                                 </constraints>
                                             </view>
                                         </subviews>

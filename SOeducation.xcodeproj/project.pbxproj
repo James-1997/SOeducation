@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D4A351B228DAA9E0007EC6E /* SimplePixelFONT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D4A351A228DAA9E0007EC6E /* SimplePixelFONT.ttf */; };
 		1DE2FEC4228CA90000544246 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2FEC3228CA90000544246 /* AppDelegate.swift */; };
 		1DE2FEC6228CA90000544246 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2FEC5228CA90000544246 /* ViewController.swift */; };
 		1DE2FEC9228CA90000544246 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE2FEC7228CA90000544246 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D4A351A228DAA9E0007EC6E /* SimplePixelFONT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimplePixelFONT.ttf; sourceTree = "<group>"; };
 		1DE2FEC0228CA90000544246 /* SOeducation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOeducation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DE2FEC3228CA90000544246 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DE2FEC5228CA90000544246 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,9 +97,18 @@
 		1DE2FEDB228CA93700544246 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1DE2FEE2228D01E600544246 /* DesignResourceUI */,
 				1DE2FEDC228CA94900544246 /* resourceDesign.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1DE2FEE2228D01E600544246 /* DesignResourceUI */ = {
+			isa = PBXGroup;
+			children = (
+				1D4A351A228DAA9E0007EC6E /* SimplePixelFONT.ttf */,
+			);
+			path = DesignResourceUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 			files = (
 				1DE2FED1228CA90200544246 /* LaunchScreen.storyboard in Resources */,
 				1DE2FECE228CA90200544246 /* Assets.xcassets in Resources */,
+				1D4A351B228DAA9E0007EC6E /* SimplePixelFONT.ttf in Resources */,
 				1DE2FEC9228CA90000544246 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

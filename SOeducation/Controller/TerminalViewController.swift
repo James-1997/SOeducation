@@ -23,7 +23,7 @@ class TerminalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+       // TextTerminal.font = UIFont(name: "SimplePixel.tff", size: 24)
         BackGroundTerminal.backgroundColor = backGroundTerminalColor
         
     }
