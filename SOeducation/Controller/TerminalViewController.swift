@@ -31,19 +31,31 @@ class TerminalViewController: UIViewController {
     
     
     @IBAction func commandSend(_ sender: Any) {
-        //Comando TextField
-       // TextTerminal.textColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
-        let command = textFieldCommand.text!
-        logCommand.append(command)
-        TextTerminal.text = ""
-        for cmd in logCommand {
-            TextTerminal.text! += ("\n BitDev://\(cmd)")
-            print("\(cmd)")
+        if clickBool == false {
+            clickBool = true
+            TextTerminal.text = ""
+            let command = textFieldCommand.text!
+            logCommand.append(command)
+            _ = commandAnalisys(cmd: command)
+            imprimirLog(ArrayLog: logCommand)
         }
-        
     }
     
+    func imprimirLog (ArrayLog: [String]) {
+        for cmd in ArrayLog {
+            TextTerminal.text! += ("\n BitDev://\(cmd)")
+        }
+    }
     
+    func commandAnalisys(cmd: String){
+        switch cmd {
+        case "open":
+            clickBool = false
+        default:
+            clickBool = false
+            logCommand.append("Comando não reconhecido")
+        }
+    }
     
     override var prefersStatusBarHidden: Bool{
         return true
