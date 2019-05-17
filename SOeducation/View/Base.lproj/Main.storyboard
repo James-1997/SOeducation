@@ -111,11 +111,11 @@
                                             <action selector="commandSend:" destination="J2D-4M-nla" eventType="touchUpInside" id="LHb-gc-Yls"/>
                                         </connections>
                                     </button>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="cor-5g-uTn">
-                                        <rect key="frame" x="8" y="65" width="1008" height="296"/>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="cor-5g-uTn">
+                                        <rect key="frame" x="8" y="65" width="1008" height="280"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FOs-PP-9Tb">
-                                                <rect key="frame" x="0.0" y="0.0" width="265.5" height="24"/>
+                                                <rect key="frame" x="8" y="8" width="265.5" height="24"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1S-PA-mTm">
                                                         <rect key="frame" x="24" y="24" width="217.5" height="24"/>
@@ -140,10 +140,10 @@
                                             </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="FOs-PP-9Tb" firstAttribute="top" secondItem="cor-5g-uTn" secondAttribute="top" id="4zC-Ij-vnv"/>
-                                            <constraint firstItem="FOs-PP-9Tb" firstAttribute="leading" secondItem="cor-5g-uTn" secondAttribute="leading" id="EUQ-lG-OoZ"/>
-                                            <constraint firstAttribute="bottom" secondItem="FOs-PP-9Tb" secondAttribute="bottom" id="GWA-wO-KW3"/>
-                                            <constraint firstAttribute="trailing" secondItem="FOs-PP-9Tb" secondAttribute="trailing" id="yG3-xl-AOL"/>
+                                            <constraint firstItem="FOs-PP-9Tb" firstAttribute="top" secondItem="cor-5g-uTn" secondAttribute="top" constant="8" id="4zC-Ij-vnv"/>
+                                            <constraint firstItem="FOs-PP-9Tb" firstAttribute="leading" secondItem="cor-5g-uTn" secondAttribute="leading" constant="8" id="EUQ-lG-OoZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="FOs-PP-9Tb" secondAttribute="bottom" constant="16" id="GWA-wO-KW3"/>
+                                            <constraint firstAttribute="trailing" secondItem="FOs-PP-9Tb" secondAttribute="trailing" constant="8" id="yG3-xl-AOL"/>
                                         </constraints>
                                     </scrollView>
                                 </subviews>
@@ -161,7 +161,7 @@
                                     <constraint firstAttribute="trailing" secondItem="cor-5g-uTn" secondAttribute="trailing" constant="8" id="bgW-Lb-8M1"/>
                                     <constraint firstItem="Blt-Ah-28O" firstAttribute="centerY" secondItem="MG3-nJ-FyR" secondAttribute="centerY" id="c3E-ud-EQ4"/>
                                     <constraint firstItem="V2a-KB-nPl" firstAttribute="centerY" secondItem="Blt-Ah-28O" secondAttribute="centerY" id="fNQ-aV-7kS"/>
-                                    <constraint firstItem="Blt-Ah-28O" firstAttribute="top" secondItem="cor-5g-uTn" secondAttribute="bottom" constant="8" id="lit-qR-XyC"/>
+                                    <constraint firstItem="Blt-Ah-28O" firstAttribute="top" secondItem="cor-5g-uTn" secondAttribute="bottom" constant="24" id="lit-qR-XyC"/>
                                     <constraint firstItem="V2a-KB-nPl" firstAttribute="leading" secondItem="Blt-Ah-28O" secondAttribute="trailing" constant="10" id="na0-LT-Wt1"/>
                                     <constraint firstItem="aA7-ZS-2CB" firstAttribute="top" secondItem="MG3-nJ-FyR" secondAttribute="top" constant="-8" id="sOJ-j6-yfd"/>
                                     <constraint firstItem="Blt-Ah-28O" firstAttribute="centerX" secondItem="MG3-nJ-FyR" secondAttribute="centerX" id="sve-QX-1BT"/>
