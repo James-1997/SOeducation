@@ -48,7 +48,7 @@ class TerminalViewController: UIViewController {
             if canAswer == true {
                 if totalAswer >= 10 {
                     print("entrou")
-                    let mensage = " ------- Fim de teste ------- \n"
+                    let mensage = " ------- Fim de teste -------"
                     logCommand.append(mensage)
                     let resultTestString = "\(correctAswers)/\(10)"
                     logCommand.append(resultTestString)
@@ -66,7 +66,7 @@ class TerminalViewController: UIViewController {
                     if Int(command) == auxValue {
                         correctAswers += 1
                     } else if (command == "cancel"){
-                        let cancelOperation = " ------- Operação cancelada ------- \n"
+                        let cancelOperation = " ------- Operação cancelada -------"
                         logCommand.append(cancelOperation)
                         imprimirLog(ArrayLog: logCommand)
                         clickBool = false
