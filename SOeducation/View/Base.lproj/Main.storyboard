@@ -21,17 +21,17 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wQ-YB-rbn">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DevLogo" translatesAutoresizingMaskIntoConstraints="NO" id="yvL-i1-NEW">
-                                        <rect key="frame" x="234" y="39" width="556" height="84"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DevLogo2" translatesAutoresizingMaskIntoConstraints="NO" id="yvL-i1-NEW">
+                                        <rect key="frame" x="234" y="222" width="556" height="84"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="84" id="nsl-ru-XZW"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playerDesk" translatesAutoresizingMaskIntoConstraints="NO" id="InM-TF-x8a">
-                                        <rect key="frame" x="119" y="375" width="786" height="393"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScenePlayer2" translatesAutoresizingMaskIntoConstraints="NO" id="InM-TF-x8a">
+                                        <rect key="frame" x="504" y="752" width="16" height="16"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTN-fn-7NU">
-                                        <rect key="frame" x="441.5" y="163" width="141" height="152"/>
+                                        <rect key="frame" x="504" y="346" width="16" height="346"/>
                                         <state key="normal" image="OnGame"/>
                                         <connections>
                                             <segue destination="ZgB-DH-3Nq" kind="show" id="eBl-pP-kCG"/>
@@ -243,16 +243,16 @@
         </scene>
     </scenes>
     <resources>
-        <image name="DevLogo" width="556" height="44"/>
+        <image name="DevLogo2" width="560" height="52"/>
         <image name="DoneSend" width="100" height="87"/>
         <image name="ExitSoftware" width="55" height="55"/>
         <image name="LogoDesktop" width="556" height="251"/>
         <image name="NavegationBarTerminal" width="1366" height="79"/>
         <image name="OnGame" width="141" height="152"/>
+        <image name="ScenePlayer2" width="786" height="392"/>
         <image name="TerminalIcon" width="150" height="150"/>
-        <image name="playerDesk" width="786" height="393"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ygn-RH-aC4"/>
+        <segue reference="eBl-pP-kCG"/>
     </inferredMetricsTieBreakers>
 </document>

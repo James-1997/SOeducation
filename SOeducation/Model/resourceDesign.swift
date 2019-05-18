@@ -14,6 +14,6 @@ let backGroundDesktopColor = #colorLiteral(red: 0.4604061842, green: 0.532539546
 let backGroundTerminalColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
 
 
-let devLogo: UIImage? = UIImage(named: "devLogo")
+let devLogo: UIImage? = UIImage(named: "DevLogo2")
 let onGame: UIImage? = UIImage(named: "OnGame")
-let playerDesk: UIImage? = UIImage(named: "playerDesk")
+let playerDesk: UIImage? = UIImage(named: "ScenePlayer2")
