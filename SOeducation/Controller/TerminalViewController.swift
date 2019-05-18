@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TerminalViewController: UIViewController {
+class TerminalViewController: UIViewController, UITextFieldDelegate {
     
     var clickBool: Bool = false
     var command: String = ""
@@ -25,14 +25,49 @@ class TerminalViewController: UIViewController {
     
     @IBOutlet weak var BackGroundTerminal: UIView!
     
+    
+    @IBOutlet weak var ruleLayoutTxtF: NSLayoutConstraint!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
        // TextTerminal.font = UIFont(name: "SimplePixel.tff", size: 24)
         BackGroundTerminal.backgroundColor = backGroundTerminalColor
         TextTerminal.text = "BitDev:// Digite o comando"
-        
+        textFieldCommand.delegate = self
     }
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    @objc func keyBoardWillShow(notification: Notification){
+        if let userInfo = notification.userInfo as? Dictionary<String, AnyObject>{
+            let frame = userInfo[UIResponder.keyboardFrameEndUserInfoKey]
+            let keyBoardRect = frame?.cgRectValue
+            if let keyBoardHeight = keyBoardRect?.height {
+                self.ruleLayoutTxtF.constant = keyBoardHeight
+                
+                UIView.animate(withDuration: 0.5, animations: {
+                    self.view.layoutIfNeeded()
+                })
+            }
+        }
+    }
+    
+    @objc func keyBoardWillHide(notification: Notification){
+        
+        self.ruleLayoutTxtF.constant = 60.0
+        UIView.animate(withDuration: 0.5, animations: {
+            self.view.layoutIfNeeded()
+        })
+    }
+   
     
     
     @IBAction func commandSend(_ sender: Any) {
@@ -182,6 +217,11 @@ class TerminalViewController: UIViewController {
             clickBool = false
             logCommand.append(" Comando não reconhecido")
         }
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
     override var prefersStatusBarHidden: Bool{

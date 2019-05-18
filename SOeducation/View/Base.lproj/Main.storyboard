@@ -95,13 +95,13 @@
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Qual o seu comando?" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="Blt-Ah-28O">
-                                        <rect key="frame" x="200" y="369" width="624" height="30"/>
+                                        <rect key="frame" x="200" y="638" width="624" height="30"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="alphabet" keyboardAppearance="alert" returnKeyType="done"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2a-KB-nPl">
-                                        <rect key="frame" x="834" y="369" width="35" height="30"/>
+                                        <rect key="frame" x="834" y="638" width="35" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="35" id="IhR-A7-e4y"/>
                                             <constraint firstAttribute="height" constant="30" id="zby-K7-1TE"/>
@@ -112,7 +112,7 @@
                                         </connections>
                                     </button>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="cor-5g-uTn">
-                                        <rect key="frame" x="8" y="65" width="1008" height="280"/>
+                                        <rect key="frame" x="8" y="65" width="1008" height="513"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FOs-PP-9Tb">
                                                 <rect key="frame" x="8" y="8" width="265.5" height="24"/>
@@ -159,12 +159,12 @@
                                     <constraint firstItem="aA7-ZS-2CB" firstAttribute="leading" secondItem="MG3-nJ-FyR" secondAttribute="leading" id="JRT-Hd-2Hp"/>
                                     <constraint firstItem="Blt-Ah-28O" firstAttribute="leading" secondItem="MG3-nJ-FyR" secondAttribute="leading" constant="200" id="ZJ3-L4-Zjq"/>
                                     <constraint firstAttribute="trailing" secondItem="cor-5g-uTn" secondAttribute="trailing" constant="8" id="bgW-Lb-8M1"/>
-                                    <constraint firstItem="Blt-Ah-28O" firstAttribute="centerY" secondItem="MG3-nJ-FyR" secondAttribute="centerY" id="c3E-ud-EQ4"/>
                                     <constraint firstItem="V2a-KB-nPl" firstAttribute="centerY" secondItem="Blt-Ah-28O" secondAttribute="centerY" id="fNQ-aV-7kS"/>
-                                    <constraint firstItem="Blt-Ah-28O" firstAttribute="top" secondItem="cor-5g-uTn" secondAttribute="bottom" constant="24" id="lit-qR-XyC"/>
+                                    <constraint firstItem="Blt-Ah-28O" firstAttribute="top" secondItem="cor-5g-uTn" secondAttribute="bottom" constant="60" id="lit-qR-XyC"/>
                                     <constraint firstItem="V2a-KB-nPl" firstAttribute="leading" secondItem="Blt-Ah-28O" secondAttribute="trailing" constant="10" id="na0-LT-Wt1"/>
                                     <constraint firstItem="aA7-ZS-2CB" firstAttribute="top" secondItem="MG3-nJ-FyR" secondAttribute="top" constant="-8" id="sOJ-j6-yfd"/>
                                     <constraint firstItem="Blt-Ah-28O" firstAttribute="centerX" secondItem="MG3-nJ-FyR" secondAttribute="centerX" id="sve-QX-1BT"/>
+                                    <constraint firstAttribute="bottom" secondItem="Blt-Ah-28O" secondAttribute="bottom" constant="100" id="w5N-uJ-otw"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -181,6 +181,7 @@
                     <connections>
                         <outlet property="BackGroundTerminal" destination="MG3-nJ-FyR" id="PyI-bP-c7k"/>
                         <outlet property="TextTerminal" destination="w1S-PA-mTm" id="pjA-b0-IK3"/>
+                        <outlet property="ruleLayoutTxtF" destination="w5N-uJ-otw" id="B0r-y0-Gj3"/>
                         <outlet property="textFieldCommand" destination="Blt-Ah-28O" id="xqv-3w-5ac"/>
                     </connections>
                 </viewController>
