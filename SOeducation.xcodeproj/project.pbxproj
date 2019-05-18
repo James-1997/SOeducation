@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1D4A351B228DAA9E0007EC6E /* SimplePixelFONT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D4A351A228DAA9E0007EC6E /* SimplePixelFONT.ttf */; };
+		1D587FCE2290B913007424F3 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D587FCD2290B913007424F3 /* CanvasView.swift */; };
+		1D587FD22290C296007424F3 /* PaintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D587FD12290C296007424F3 /* PaintViewController.swift */; };
 		1DE2FEC4228CA90000544246 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2FEC3228CA90000544246 /* AppDelegate.swift */; };
 		1DE2FEC6228CA90000544246 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2FEC5228CA90000544246 /* ViewController.swift */; };
 		1DE2FEC9228CA90000544246 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE2FEC7228CA90000544246 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		1D4A351A228DAA9E0007EC6E /* SimplePixelFONT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimplePixelFONT.ttf; sourceTree = "<group>"; };
+		1D587FCD2290B913007424F3 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		1D587FD12290C296007424F3 /* PaintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintViewController.swift; sourceTree = "<group>"; };
 		1DE2FEC0228CA90000544246 /* SOeducation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOeducation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DE2FEC3228CA90000544246 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DE2FEC5228CA90000544246 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 				1DE2FEC5228CA90000544246 /* ViewController.swift */,
 				1DE2FEDE228CCEEF00544246 /* DesktopViewController.swift */,
 				1DE2FEE0228CD69D00544246 /* TerminalViewController.swift */,
+				1D587FD12290C296007424F3 /* PaintViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 			children = (
 				1DE2FEE2228D01E600544246 /* DesignResourceUI */,
 				1DE2FEDC228CA94900544246 /* resourceDesign.swift */,
+				1D587FCD2290B913007424F3 /* CanvasView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,11 +190,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DE2FEE1228CD69D00544246 /* TerminalViewController.swift in Sources */,
+				1D587FCE2290B913007424F3 /* CanvasView.swift in Sources */,
 				1DE2FEC6228CA90000544246 /* ViewController.swift in Sources */,
 				1DE2FEDF228CCEEF00544246 /* DesktopViewController.swift in Sources */,
 				1DE2FEDD228CA94900544246 /* resourceDesign.swift in Sources */,
 				1DE2FECC228CA90000544246 /* SOeducation.xcdatamodeld in Sources */,
 				1DE2FEC4228CA90000544246 /* AppDelegate.swift in Sources */,
+				1D587FD22290C296007424F3 /* PaintViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
