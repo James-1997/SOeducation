@@ -10,6 +10,7 @@
 		1D4A351B228DAA9E0007EC6E /* SimplePixelFONT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D4A351A228DAA9E0007EC6E /* SimplePixelFONT.ttf */; };
 		1D587FCE2290B913007424F3 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D587FCD2290B913007424F3 /* CanvasView.swift */; };
 		1D587FD22290C296007424F3 /* PaintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D587FD12290C296007424F3 /* PaintViewController.swift */; };
+		1D587FD42290F4A8007424F3 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D587FD32290F4A8007424F3 /* CustomAlertViewController.swift */; };
 		1DE2FEC4228CA90000544246 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2FEC3228CA90000544246 /* AppDelegate.swift */; };
 		1DE2FEC6228CA90000544246 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2FEC5228CA90000544246 /* ViewController.swift */; };
 		1DE2FEC9228CA90000544246 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE2FEC7228CA90000544246 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		1D4A351A228DAA9E0007EC6E /* SimplePixelFONT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimplePixelFONT.ttf; sourceTree = "<group>"; };
 		1D587FCD2290B913007424F3 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		1D587FD12290C296007424F3 /* PaintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintViewController.swift; sourceTree = "<group>"; };
+		1D587FD32290F4A8007424F3 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
 		1DE2FEC0228CA90000544246 /* SOeducation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOeducation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DE2FEC3228CA90000544246 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DE2FEC5228CA90000544246 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				1DE2FEDE228CCEEF00544246 /* DesktopViewController.swift */,
 				1DE2FEE0228CD69D00544246 /* TerminalViewController.swift */,
 				1D587FD12290C296007424F3 /* PaintViewController.swift */,
+				1D587FD32290F4A8007424F3 /* CustomAlertViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			files = (
 				1DE2FEE1228CD69D00544246 /* TerminalViewController.swift in Sources */,
 				1D587FCE2290B913007424F3 /* CanvasView.swift in Sources */,
+				1D587FD42290F4A8007424F3 /* CustomAlertViewController.swift in Sources */,
 				1DE2FEC6228CA90000544246 /* ViewController.swift in Sources */,
 				1DE2FEDF228CCEEF00544246 /* DesktopViewController.swift in Sources */,
 				1DE2FEDD228CA94900544246 /* resourceDesign.swift in Sources */,

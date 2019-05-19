@@ -221,6 +221,11 @@ class TerminalViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func helpForCommands(_ sender: Any) {
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "CustomAlertViewController") as! CustomAlertViewController
+        vc.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        self.addChild(vc)
+        self.view.addSubview(vc.view)
     }
     
     

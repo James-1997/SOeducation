@@ -44,3 +44,7 @@ let redBtUnSelect: UIImage? = UIImage(named: "Red")
 let greenBtUnSelect: UIImage? = UIImage(named: "Green")
 let blueBtUnSelect: UIImage? = UIImage(named: "Blue")
 let blackBtUnSelect: UIImage? = UIImage(named: "Black")
+
+// comandos do terminal
+
+let commandsTerminal = "Bem-vindo ao Terminal, Os comandos necessários para você trabalhar nessa interface são: \n \n 1) Para testes de matemática da operação soma \n Test.Math(+) \n 2) Para testes de matemática da operação subtração \n Test.Math(-) \n 3) Para testes de matemática da operação multiplicação \n Test.Math(*) \n 4)Para testes de matemática da operação divisão \n Test.Math(/) \n \n Para apagar seu histórico de comandos basta escrever clear e para cancelar uma operação sem finalizá-la, basta escrever cancel "

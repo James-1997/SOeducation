@@ -263,6 +263,99 @@
             </objects>
             <point key="canvasLocation" x="887.69531249999989" y="30.46875"/>
         </scene>
+        <!--Custom Alert View Controller-->
+        <scene sceneID="vuo-8a-Owg">
+            <objects>
+                <viewController storyboardIdentifier="CustomAlertViewController" id="N54-Sp-R8K" customClass="CustomAlertViewController" customModule="SOeducation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="52c-f5-SIF">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Du9-f8-89F">
+                                <rect key="frame" x="157" y="134" width="710" height="500"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HelperTerminalComandsHelp" translatesAutoresizingMaskIntoConstraints="NO" id="d69-Ba-tbC">
+                                        <rect key="frame" x="0.0" y="-5" width="710" height="69"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o52-up-cUT">
+                                        <rect key="frame" x="335" y="440" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="h8t-Fr-kXg"/>
+                                            <constraint firstAttribute="height" constant="40" id="zqL-a3-6FC"/>
+                                        </constraints>
+                                        <state key="normal" image="OK"/>
+                                        <connections>
+                                            <action selector="DoneButtonHelper:" destination="N54-Sp-R8K" eventType="touchUpInside" id="Eql-Aj-OZJ"/>
+                                        </connections>
+                                    </button>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ynM-Wn-3lZ">
+                                        <rect key="frame" x="8" y="72" width="686" height="356"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FOC-No-VVZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="686" height="1000"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqE-ZS-gQy">
+                                                        <rect key="frame" x="8" y="0.0" width="670" height="20.5"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="a">
+                                                                <attributes>
+                                                                    <font key="NSFont" metaFont="system" size="17"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="gqE-ZS-gQy" secondAttribute="trailing" constant="8" id="Z43-hO-r1R"/>
+                                                    <constraint firstAttribute="height" constant="1000" id="ZSM-AU-iyc"/>
+                                                    <constraint firstItem="gqE-ZS-gQy" firstAttribute="leading" secondItem="FOC-No-VVZ" secondAttribute="leading" constant="8" id="cJ5-s1-JMb"/>
+                                                    <constraint firstItem="gqE-ZS-gQy" firstAttribute="top" secondItem="FOC-No-VVZ" secondAttribute="top" id="g9Z-er-WAe"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="FOC-No-VVZ" secondAttribute="bottom" id="O14-v5-jlj"/>
+                                            <constraint firstItem="FOC-No-VVZ" firstAttribute="centerX" secondItem="ynM-Wn-3lZ" secondAttribute="centerX" id="VDr-dB-vmY"/>
+                                            <constraint firstItem="FOC-No-VVZ" firstAttribute="top" secondItem="ynM-Wn-3lZ" secondAttribute="top" id="YiS-Bu-IqG"/>
+                                            <constraint firstAttribute="trailing" secondItem="FOC-No-VVZ" secondAttribute="trailing" id="iHf-Oz-x3v"/>
+                                            <constraint firstItem="FOC-No-VVZ" firstAttribute="leading" secondItem="ynM-Wn-3lZ" secondAttribute="leading" id="pGA-nx-0On"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ynM-Wn-3lZ" firstAttribute="top" secondItem="d69-Ba-tbC" secondAttribute="bottom" constant="8" id="986-d9-fL8"/>
+                                    <constraint firstAttribute="trailing" secondItem="d69-Ba-tbC" secondAttribute="trailing" id="9CN-tE-ZcV"/>
+                                    <constraint firstAttribute="width" constant="710" id="Cz5-pg-n2y"/>
+                                    <constraint firstItem="o52-up-cUT" firstAttribute="top" secondItem="ynM-Wn-3lZ" secondAttribute="bottom" constant="12" id="FAC-87-GhD"/>
+                                    <constraint firstItem="d69-Ba-tbC" firstAttribute="top" secondItem="Du9-f8-89F" secondAttribute="top" constant="-5" id="UVo-Re-KT5"/>
+                                    <constraint firstItem="o52-up-cUT" firstAttribute="centerX" secondItem="Du9-f8-89F" secondAttribute="centerX" id="UdZ-cg-bqW"/>
+                                    <constraint firstItem="ynM-Wn-3lZ" firstAttribute="leading" secondItem="Du9-f8-89F" secondAttribute="leading" constant="8" id="Uz8-wA-ctc"/>
+                                    <constraint firstAttribute="trailing" secondItem="ynM-Wn-3lZ" secondAttribute="trailing" constant="16" id="Y1H-LA-6Nn"/>
+                                    <constraint firstAttribute="bottom" secondItem="o52-up-cUT" secondAttribute="bottom" constant="20" id="pmZ-XW-V2P"/>
+                                    <constraint firstItem="d69-Ba-tbC" firstAttribute="leading" secondItem="Du9-f8-89F" secondAttribute="leading" id="wym-8W-lZL"/>
+                                    <constraint firstAttribute="height" constant="500" id="yRi-j5-781"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Du9-f8-89F" firstAttribute="centerY" secondItem="52c-f5-SIF" secondAttribute="centerY" id="Cck-xz-shj"/>
+                            <constraint firstItem="Du9-f8-89F" firstAttribute="centerX" secondItem="52c-f5-SIF" secondAttribute="centerX" id="XKN-Sf-xSw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9Wv-ux-6n0"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelInfoAboutCommands" destination="gqE-ZS-gQy" id="ga6-jV-lv8"/>
+                        <outlet property="popViewBackground" destination="Du9-f8-89F" id="LgJ-CN-gD3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7re-go-A3J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1863.8671874999998" y="-909.375"/>
+        </scene>
         <!--Paint View Controller-->
         <scene sceneID="dcf-xB-Jfv">
             <objects>
@@ -441,9 +534,11 @@
         <image name="DoneSend" width="100" height="87"/>
         <image name="ExiIcon2" width="98" height="98"/>
         <image name="Green" width="34" height="34"/>
+        <image name="HelperTerminalComandsHelp" width="800" height="69"/>
         <image name="LogoDesktop" width="556" height="251"/>
         <image name="NavegationBarPaint" width="1366" height="79"/>
         <image name="NavegationBarTerminal" width="1366" height="79"/>
+        <image name="OK" width="80" height="80"/>
         <image name="OnGame" width="141" height="152"/>
         <image name="PaintIcon" width="150" height="150"/>
         <image name="Pallete" width="148" height="168"/>
