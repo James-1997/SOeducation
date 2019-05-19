@@ -8,8 +8,13 @@
 
 import UIKit
 
+
+var colorUserSelect: UIColor = UIColor.black
+var sizePointUser: CGFloat = 1
+
 class CanvasView: UIView {
     
+    var havePoint: Bool = false
     // Properties for line drawing
     var lineColor:UIColor!
     var lineWidth:CGFloat!
@@ -22,8 +27,8 @@ class CanvasView: UIView {
         self.isMultipleTouchEnabled = false // we only process one touch at a time
         
         // standard settings for our line
-        lineColor = UIColor.red
-        lineWidth = 1
+        lineColor = colorUserSelect
+        lineWidth = sizePointUser
     }
     
     
@@ -35,6 +40,7 @@ class CanvasView: UIView {
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         // get the next touch point as the user draws
+        havePoint = true
         let touch = touches.first
         touchPoint = touch?.location(in: self)
         
@@ -51,7 +57,7 @@ class CanvasView: UIView {
     }
     
     func drawShapeLayer() {
-        
+        havePoint = true
         let shapeLayer = CAShapeLayer()
         // the shape layer is used to draw along the already created path
         shapeLayer.path = path.cgPath
@@ -68,9 +74,12 @@ class CanvasView: UIView {
     }
     
     func clearCanvas() {
-        path.removeAllPoints()
-        self.layer.sublayers = nil
-        self.setNeedsDisplay()
+        if havePoint == true {
+            path.removeAllPoints()
+            self.layer.sublayers = nil
+            self.setNeedsDisplay()
+            havePoint = false
+        }
     }
     
     
