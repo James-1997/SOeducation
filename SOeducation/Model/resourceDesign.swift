@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-let backGroundMenuColor = #colorLiteral(red: 0.3769153953, green: 0.3197867274, blue: 0.5394120812, alpha: 1)
+let backGroundMenuColor = #colorLiteral(red: 0.9816325307, green: 0.7809638381, blue: 0.2866430879, alpha: 1)
 let backGroundDesktopColor = #colorLiteral(red: 0.4604061842, green: 0.5325395465, blue: 0.5909550786, alpha: 1)
 let backGroundTerminalColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
 
