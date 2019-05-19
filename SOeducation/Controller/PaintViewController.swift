@@ -28,17 +28,23 @@ class PaintViewController: UIViewController {
     @IBOutlet weak var blueImageBt: UIButton!
     
     @IBOutlet weak var selectedPincelColor: UIImageView!
+   
     
+    @IBOutlet weak var setChangeImage: UIButton!
     
+    var indexArr: Int = 0
+    var limit: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        sliderPointSize.value = Float(sizePointUser)
         sliderPointSize.minimumTrackTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        colorUserSelect = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         sliderPointSize.maximumValueImage = sldMinImgBlack
         sliderPointSize.minimumValueImage = sldMaxImgBlack
         selectedPincelColor.image = blackBtSelect
-        
+        verifiqBackGroundTheme()
     }
     
     
@@ -110,6 +116,38 @@ class PaintViewController: UIViewController {
         
     }
     
+    
+    func verifiqBackGroundTheme(){
+        
+        switch haveBackGroundForStud {
+        case "Mockup":
+            setChangeImage.isHidden = false
+            limit = mockupArrayImagesMK.count
+            backGroundImage.image = mockupArrayImagesMK[indexArr]
+        case "Math":
+            setChangeImage.isHidden = false
+            limit = mathArrayImagesMT.count
+            backGroundImage.image = mathArrayImagesMT[indexArr]
+        case "Logic":
+            setChangeImage.isHidden = false
+            limit = logArrayImagesLG.count
+            backGroundImage.image = logArrayImagesLG[indexArr]
+        default:
+            setChangeImage.isHidden = true
+            print("vazio")
+        }
+    }
+    
+    
+    @IBAction func changeImageBackGround(_ sender: Any) {
+        if !((indexArr + 1) >= limit) {
+            indexArr += 1
+            verifiqBackGroundTheme()
+        } else {
+            indexArr = 0
+            verifiqBackGroundTheme()
+        }
+    }
     
     
     override var prefersStatusBarHidden: Bool{

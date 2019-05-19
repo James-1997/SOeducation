@@ -211,6 +211,28 @@ class TerminalViewController: UIViewController, UITextFieldDelegate {
             logCommand.removeAll()
             imprimirLog(ArrayLog: logCommand)
             clickBool = false
+        case "open PaintDev":
+             performSegue(withIdentifier: "TerminalForPaint", sender: nil)
+        case "PaintDev = Mockup":
+            haveBackGroundForStud = "Mockup"
+            let mss = "Tema instalado"
+            logCommand.append(mss)
+            imprimirLog(ArrayLog: logCommand)
+        case "PaintDev = Math":
+            haveBackGroundForStud = "Math"
+            let mss = "Tema instalado"
+            logCommand.append(mss)
+            imprimirLog(ArrayLog: logCommand)
+        case "PaintDev = Logic":
+            haveBackGroundForStud = "Logic"
+            let mss = "Tema instalado"
+            logCommand.append(mss)
+            imprimirLog(ArrayLog: logCommand)
+        case "PaintDev = !":
+            let mss = "Modo Livre instalado"
+            logCommand.append(mss)
+            imprimirLog(ArrayLog: logCommand)
+            haveBackGroundForStud = ""
         case "":
             clickBool = false
         default:

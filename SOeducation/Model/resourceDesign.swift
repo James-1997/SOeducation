@@ -47,4 +47,37 @@ let blackBtUnSelect: UIImage? = UIImage(named: "Black")
 
 // comandos do terminal
 
-let commandsTerminal = "Bem-vindo ao Terminal, Os comandos necessários para você trabalhar nessa interface são: \n \n 1) Para testes de matemática da operação soma \n Test.Math(+) \n 2) Para testes de matemática da operação subtração \n Test.Math(-) \n 3) Para testes de matemática da operação multiplicação \n Test.Math(*) \n 4)Para testes de matemática da operação divisão \n Test.Math(/) \n \n Para apagar seu histórico de comandos basta escrever clear e para cancelar uma operação sem finalizá-la, basta escrever cancel "
+
+let commandsTerminal = "Bem-vindo ao Terminal, Os comandos necessários para você trabalhar nessa interface são: \n \n 1) Para testes de matemática da operação soma \n \t \t Test.Math(+) \n \n 2) Para testes de matemática da operação subtração \n  \t \t Test.Math(-) \n \n 3) Para testes de matemática da operação multiplicação \n  \t \t Test.Math(*) \n \n 4) Para testes de matemática da operação divisão \n \t \t Test.Math(/) \n \n 5) Para apagar seu histórico de comandos digite: \n \t \t clear \n \n 6) Para cancelar uma operação sem finalizá-la digite: \n \t \t cancel \n \n 7) Caso queira abrir o programa do Paint digite: \n \t \t open PaintDev \n \n"
+
+
+// image for backGround
+
+let imageGameForStud: UIImage? = nil
+
+var haveBackGroundForStud: String = ""
+
+//Arrays Pictures
+
+let m1 = UIImage.init(named: "M1")
+let m2 = UIImage.init(named: "M2")
+let m3 = UIImage.init(named: "M3")
+let m4 = UIImage.init(named: "SketchForApp")
+
+let mockupArrayImagesMK: [UIImage] = [m1!, m2!, m3!, m4!]
+
+let mat1 = UIImage.init(named: "mat1")
+let mat2 = UIImage.init(named: "mat2")
+let mat3 = UIImage.init(named: "mat3")
+let mat4 = UIImage.init(named: "mat4")
+let mat6 = UIImage.init(named: "mat6")
+
+let mathArrayImagesMT: [UIImage] = [mat1!, mat2!, mat3!, mat4!,  mat6!]
+
+let log1 = UIImage.init(named: "lg1")
+let log2 = UIImage.init(named: "lg2")
+let log3 = UIImage.init(named: "lg3")
+let log4 = UIImage.init(named: "lg4")
+
+let logArrayImagesLG: [UIImage] = [log1!, log2!, log3!, log4!]
+
