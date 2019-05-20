@@ -18,6 +18,11 @@ class TerminalViewController: UIViewController, UITextFieldDelegate {
     var auxValue: Int = 0
     var correctAswers: Int = 0
     var totalAswer: Int = 0
+    var auxValueP: String = ""
+    var auxValueR: String = ""
+    var robotProgram: Bool = false
+    
+    
     
     @IBOutlet weak var TextTerminal: UILabel!
     
@@ -93,29 +98,57 @@ class TerminalViewController: UIViewController, UITextFieldDelegate {
                     totalAswer = 0
                     operationComand = ""
                 } else {
-                   
-                    let command = textFieldCommand.text!
-                    textFieldCommand.text = ""
-                    logCommand.append(command)
-                    imprimirLog(ArrayLog: logCommand)
-                    if Int(command) == auxValue {
-                        correctAswers += 1
-                    } else if (command == "cancel"){
-                        let cancelOperation = " ------- Operação cancelada -------"
-                        logCommand.append(cancelOperation)
+                    if robotProgram == true {
+                        print("entrou")
+                        let command = textFieldCommand.text!
+                        textFieldCommand.text = ""
+                        logCommand.append(command)
                         imprimirLog(ArrayLog: logCommand)
-                        clickBool = false
-                        correctAswers = 0
-                        totalAswer = 0
-                        operationComand = ""
-                    }
-                    totalAswer += 1
-                    if totalAswer < 10 {
-                        operationValidation()
+                        print(command)
+                        if command == auxValueP || command == auxValueR{
+                            correctAswers += 1
+                            print("acertou")
+                        } else if (command == "cancel"){
+                            let cancelOperation = " ------- Operação cancelada -------"
+                            logCommand.append(cancelOperation)
+                            imprimirLog(ArrayLog: logCommand)
+                            clickBool = false
+                            correctAswers = 0
+                            totalAswer = 0
+                            operationComand = ""
+                        }
+                        totalAswer += 1
+                        if totalAswer < 10 {
+                            operationValidation()
+                        } else {
+                            let mss = "Clique OK para ver o resultado"
+                            logCommand.append(mss)
+                            imprimirLog(ArrayLog: logCommand)
+                        }
                     } else {
-                        let mss = "Clique OK para ver o resultado"
-                        logCommand.append(mss)
+                        let command = textFieldCommand.text!
+                        textFieldCommand.text = ""
+                        logCommand.append(command)
                         imprimirLog(ArrayLog: logCommand)
+                        if Int(command) == auxValue {
+                            correctAswers += 1
+                        } else if (command == "cancel"){
+                            let cancelOperation = " ------- Operação cancelada -------"
+                            logCommand.append(cancelOperation)
+                            imprimirLog(ArrayLog: logCommand)
+                            clickBool = false
+                            correctAswers = 0
+                            totalAswer = 0
+                            operationComand = ""
+                        }
+                        totalAswer += 1
+                        if totalAswer < 10 {
+                            operationValidation()
+                        } else {
+                            let mss = "Clique OK para ver o resultado"
+                            logCommand.append(mss)
+                            imprimirLog(ArrayLog: logCommand)
+                        }
                     }
                 }
             }
@@ -144,6 +177,16 @@ class TerminalViewController: UIViewController, UITextFieldDelegate {
             logCommand.append(multControl.0)
             auxValue = multControl.1
             imprimirLog(ArrayLog: logCommand)
+        case "program":
+            let programControl = questionProgram()
+            logCommand.append(programControl.0)
+            auxValueP = programControl.1
+            imprimirLog(ArrayLog: logCommand)
+        case "robot":
+             let robotControl = questionRobot()
+             logCommand.append(robotControl.0)
+             auxValueR = robotControl.1
+             imprimirLog(ArrayLog: logCommand)
         default:
             clickBool = false
         }
@@ -190,6 +233,21 @@ class TerminalViewController: UIViewController, UITextFieldDelegate {
         return (question, result)
     }
     
+    func questionRobot() -> (String, String) {
+        canAswer = true
+        let question = robot.keys.randomElement()
+        let result = robot["\(question!)"]
+        return (question!, result!)
+    }
+    
+    func questionProgram() -> (String, String) {
+        canAswer = true
+        let question = program.keys.randomElement()
+        let result = program["\(question!)"]
+        return (question!, result!)
+    }
+    
+    
     func imprimirLog (ArrayLog: [String]) {
         TextTerminal.text = ""
         for cmd in ArrayLog {
@@ -207,12 +265,20 @@ class TerminalViewController: UIViewController, UITextFieldDelegate {
             operationComand = "/"
         case "Test.Math(*)":
             operationComand = "*"
+        case "Test.Robot()":
+            robotProgram = true
+            operationComand = "robot"
+        case "Test.Program()":
+            robotProgram = true
+            operationComand = "program"
         case "clear":
             logCommand.removeAll()
             imprimirLog(ArrayLog: logCommand)
             clickBool = false
         case "open PaintDev":
              performSegue(withIdentifier: "TerminalForPaint", sender: nil)
+        case "exit":
+            performSegue(withIdentifier: "exitTerm", sender: nil)
         case "PaintDev = Mockup":
             haveBackGroundForStud = "Mockup"
             let mss = "Tema instalado"
@@ -260,3 +326,7 @@ class TerminalViewController: UIViewController, UITextFieldDelegate {
         return true
     }
 }
+
+//let A = robot.keys.randomElement()
+//
+//robot["\(A!)"]

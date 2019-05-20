@@ -91,7 +91,7 @@
                                         </constraints>
                                         <state key="normal" image="ExiIcon2"/>
                                         <connections>
-                                            <segue destination="ZgB-DH-3Nq" kind="show" id="ygn-RH-aC4"/>
+                                            <segue destination="ZgB-DH-3Nq" kind="show" identifier="exitTerm" id="ygn-RH-aC4"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Qual o seu comando?" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="Blt-Ah-28O">
@@ -571,6 +571,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="USJ-FL-0hg"/>
-        <segue reference="EPl-GN-BEI"/>
+        <segue reference="ygn-RH-aC4"/>
     </inferredMetricsTieBreakers>
 </document>
